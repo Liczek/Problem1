@@ -67,9 +67,8 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     //MARK: UITextFieldDelegate
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
-        mealNameLabel.text = textField.text
+        mealNameLabel.text = textField.text?.capitalizedString
         mealNameLabel.textColor = UIColor.redColor()
-        mealNameLabel.text?.capitalizedString
         textField.resignFirstResponder()
         
         return true
