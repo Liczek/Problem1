@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -19,35 +18,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7EQ-6A-din">
-                                <rect key="frame" x="20" y="72" width="300" height="501"/>
+                                <rect key="frame" x="0.0" y="72" width="600" height="528"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="21" text="New Meal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wb-sh-oaa">
-                                        <rect key="frame" x="30" y="0.0" width="240" height="21"/>
+                                        <rect key="frame" x="180" y="0.0" width="240" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0s1-Ln-6iD">
-                                        <rect key="frame" x="30" y="31" width="240" height="30"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0s1-Ln-6iD">
+                                        <rect key="frame" x="180" y="31" width="240" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="30" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BrE-am-14c">
-                                        <rect key="frame" x="30" y="71" width="240" height="30"/>
+                                        <rect key="frame" x="180" y="71" width="240" height="57"/>
                                         <state key="normal" title="Set default meal name"/>
                                         <connections>
                                             <action selector="setDefaultMealName:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ygn-fi-oNz"/>
                                         </connections>
                                     </button>
-                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="300" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="ugq-3c-pyj">
-                                        <rect key="frame" x="0.0" y="111" width="300" height="300"/>
+                                    <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="300" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="ugq-3c-pyj">
+                                        <rect key="frame" x="150" y="138" width="300" height="300"/>
                                         <gestureRecognizers/>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="AMs-85-1eU" appends="YES" id="wvb-II-bTZ"/>
                                         </connections>
                                     </imageView>
-                                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="52y-Si-Bav">
-                                        <rect key="frame" x="0.0" y="421" width="300" height="80"/>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="251" placeholderIntrinsicWidth="300" placeholderIntrinsicHeight="80" translatesAutoresizingMaskIntoConstraints="NO" id="52y-Si-Bav">
+                                        <rect key="frame" x="150" y="448" width="300" height="80"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                 </subviews>
@@ -55,7 +54,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7EQ-6A-din" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oUF-kh-g2r"/>
+                            <constraint firstAttribute="trailing" secondItem="7EQ-6A-din" secondAttribute="trailing" id="7xh-sM-azi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7EQ-6A-din" secondAttribute="bottom" id="do4-kD-J0m"/>
+                            <constraint firstItem="7EQ-6A-din" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oUF-kh-g2r"/>
                             <constraint firstItem="7EQ-6A-din" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="sg8-1a-Fkz"/>
                         </constraints>
                     </view>
