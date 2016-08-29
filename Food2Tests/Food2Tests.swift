@@ -1,15 +1,15 @@
 //
-//  FoodTrening1Tests.swift
-//  FoodTrening1Tests
+//  Food2Tests.swift
+//  Food2Tests
 //
-//  Created by Pawel on 09.08.2016.
+//  Created by Pawel on 29.08.2016.
 //  Copyright © 2016 LiczekCompany. All rights reserved.
 //
 
 import XCTest
-@testable import FoodTrening1
+@testable import Food2
 
-class FoodTrening1Tests: XCTestCase {
+class Food2Tests: XCTestCase {
     
     override func setUp() {
         super.setUp()

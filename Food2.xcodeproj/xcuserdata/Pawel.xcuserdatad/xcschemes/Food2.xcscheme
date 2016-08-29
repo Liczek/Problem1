@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E55D58A91D5A3A9300C948C0"
-               BuildableName = "FoodTrening1.app"
-               BlueprintName = "FoodTrening1"
-               ReferencedContainer = "container:FoodTrening1.xcodeproj">
+               BlueprintIdentifier = "E56D98951D74A49F00D0F7F6"
+               BuildableName = "Food2.app"
+               BlueprintName = "Food2"
+               ReferencedContainer = "container:Food2.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E55D58BD1D5A3A9300C948C0"
-               BuildableName = "FoodTrening1Tests.xctest"
-               BlueprintName = "FoodTrening1Tests"
-               ReferencedContainer = "container:FoodTrening1.xcodeproj">
+               BlueprintIdentifier = "E56D98AC1D74A49F00D0F7F6"
+               BuildableName = "Food2Tests.xctest"
+               BlueprintName = "Food2Tests"
+               ReferencedContainer = "container:Food2.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "E56D98B71D74A49F00D0F7F6"
+               BuildableName = "Food2UITests.xctest"
+               BlueprintName = "Food2UITests"
+               ReferencedContainer = "container:Food2.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E55D58A91D5A3A9300C948C0"
-            BuildableName = "FoodTrening1.app"
-            BlueprintName = "FoodTrening1"
-            ReferencedContainer = "container:FoodTrening1.xcodeproj">
+            BlueprintIdentifier = "E56D98951D74A49F00D0F7F6"
+            BuildableName = "Food2.app"
+            BlueprintName = "Food2"
+            ReferencedContainer = "container:Food2.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E55D58A91D5A3A9300C948C0"
-            BuildableName = "FoodTrening1.app"
-            BlueprintName = "FoodTrening1"
-            ReferencedContainer = "container:FoodTrening1.xcodeproj">
+            BlueprintIdentifier = "E56D98951D74A49F00D0F7F6"
+            BuildableName = "Food2.app"
+            BlueprintName = "Food2"
+            ReferencedContainer = "container:Food2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -84,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E55D58A91D5A3A9300C948C0"
-            BuildableName = "FoodTrening1.app"
-            BlueprintName = "FoodTrening1"
-            ReferencedContainer = "container:FoodTrening1.xcodeproj">
+            BlueprintIdentifier = "E56D98951D74A49F00D0F7F6"
+            BuildableName = "Food2.app"
+            BlueprintName = "Food2"
+            ReferencedContainer = "container:Food2.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

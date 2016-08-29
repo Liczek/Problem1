@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FoodTrening1.xcscheme</key>
+		<key>Food2.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E55D58A91D5A3A9300C948C0</key>
+		<key>E56D98951D74A49F00D0F7F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E55D58BD1D5A3A9300C948C0</key>
+		<key>E56D98AC1D74A49F00D0F7F6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E56D98B71D74A49F00D0F7F6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
