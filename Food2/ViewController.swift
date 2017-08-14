@@ -26,15 +26,15 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
         super.viewDidLoad()
         
         mealNameTextField.delegate = self
-        mealNameTextField.keyboardAppearance = .Dark
-        mealNameTextField.returnKeyType = .Done
+        mealNameTextField.keyboardAppearance = .dark
+        mealNameTextField.returnKeyType = .done
         mealNameTextField.clearsOnBeginEditing = true
         
         mealPhoto.layer.borderWidth = 1
-        mealPhoto.layer.borderColor = UIColor.grayColor().CGColor
-        mealPhoto.userInteractionEnabled = true
+        mealPhoto.layer.borderColor = UIColor.gray.cgColor
+        mealPhoto.isUserInteractionEnabled = true
         
-        mealNameLabel.textColor = UIColor.blackColor()
+        mealNameLabel.textColor = UIColor.black
         
         
         
@@ -48,48 +48,48 @@ class ViewController: UIViewController, UITextFieldDelegate, UIImagePickerContro
     //MARK: Actions
     
     
-    @IBAction func setNewMealPhotoPicker(sender: UITapGestureRecognizer) {
+    @IBAction func setNewMealPhotoPicker(_ sender: UITapGestureRecognizer) {
         
         let imagePicker = UIImagePickerController()
         
-        imagePicker.sourceType = .PhotoLibrary
+        imagePicker.sourceType = .photoLibrary
         imagePicker.delegate = self
-        presentViewController(imagePicker, animated: true, completion: nil)
+        present(imagePicker, animated: true, completion: nil)
         
     }
     
 
-    @IBAction func setDefaultMealName(sender: UIButton) {
+    @IBAction func setDefaultMealName(_ sender: UIButton) {
         mealNameLabel.text = "New Meal Name"
-        mealNameLabel.textColor = UIColor.blackColor()
+        mealNameLabel.textColor = UIColor.black
     }
     
     //MARK: UITextFieldDelegate
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        mealNameLabel.text = textField.text?.capitalizedString
-        mealNameLabel.textColor = UIColor.redColor()
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        mealNameLabel.text = textField.text?.capitalized
+        mealNameLabel.textColor = UIColor.red
         textField.resignFirstResponder()
         
         return true
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
-        mealNameLabel.text?.capitalizedString
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        mealNameLabel.text?.capitalized
         textField.text = nil
     }
     
     //MARK: UIImagePickerControllerDelegate
     
-    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         mealPhoto.image = pickedImage
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
-    func imagePickerControllerDidCancel(picker: UIImagePickerController) {
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
        
-        dismissViewControllerAnimated(true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 
 }
